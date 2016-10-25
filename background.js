@@ -7,7 +7,10 @@ var urlWhitelist = {
     'nfs.sparknotes.com': true,
     'www.litcharts.com': true,
     'www.cliffsnotes.com': true,
-    'www.shmoop.com': true
+    'www.shmoop.com': true,
+    'lit.genius.com': true,
+    'genius.com': true,
+    'www.genius.com': true
 };
 
 var logeing = function () {
