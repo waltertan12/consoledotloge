@@ -7,7 +7,10 @@ var urlWhitelist = {
     'nfs.sparknotes.com': true,
     'www.litcharts.com': true,
     'www.cliffsnotes.com': true,
-    'www.shmoop.com': true
+    'www.shmoop.com': true,
+    'lit.genius.com': true,
+    'genius.com': true,
+    'www.genius.com': true
 };
 
 var logeing = function () {
@@ -28,7 +31,7 @@ var logeing = function () {
             'typecast': true 
         },
         http = new XMLHttpRequest(),
-        url = "https://api.airtable.com/v0/YOUR_AIR_TABLE_IDENTIFIER";
+        url = "https://api.airtable.com/v0/appa4HLwmnDbJb8TQ/Table%201";
 
     // Get URL
     console.log('Logging timing for ' + window.location.href);
@@ -57,7 +60,7 @@ var logeing = function () {
 
     // Log data to AirTable
     http.open('POST', url, true);
-    http.setRequestHeader('Authorization', 'Bearer YOU_AIR_TABLE_API_KEY');
+    http.setRequestHeader('Authorization', 'Bearer key5pAshbLlG77kiT');
     http.setRequestHeader('Content-type', 'application/json');
     http.send(JSON.stringify(timingData));
 };
