@@ -31,7 +31,7 @@ var logeing = function () {
             'typecast': true 
         },
         http = new XMLHttpRequest(),
-        url = "https://api.airtable.com/v0/appa4HLwmnDbJb8TQ/Table%201";
+        url = "https://api.airtable.com/v0/appa4HLwmnDbJb8TQ/YOUR_AIR_TABLE_IDENTIFIER";
 
     // Get URL
     console.log('Logging timing for ' + window.location.href);
@@ -60,7 +60,7 @@ var logeing = function () {
 
     // Log data to AirTable
     http.open('POST', url, true);
-    http.setRequestHeader('Authorization', 'Bearer key5pAshbLlG77kiT');
+    http.setRequestHeader('Authorization', 'Bearer YOUR_AIR_TABLE_API_KEY');
     http.setRequestHeader('Content-type', 'application/json');
     http.send(JSON.stringify(timingData));
 };
